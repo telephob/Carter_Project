@@ -1,0 +1,24 @@
+#rephead {
+    background-color:darksl; /* Grey background */
+    padding: 50px 10px;
+    color: black;
+    text-align: center;
+    font-size: 80px;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: 0.2s; 
+}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+    width: 100%;
+    margin: 180px auto;
+    position: static;
+    height: 1000px;
+}

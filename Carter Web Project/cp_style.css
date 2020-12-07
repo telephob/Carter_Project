@@ -1,0 +1,537 @@
+@charset "utf-8";
+
+/*@font-face {
+    font-family:"pt-root-ui-regular"; 
+    src: url("https://dafonttop.com/wp-data/p/697/10697/file/pt-root-ui.regular.ttf") format("woff"),
+        url("https://dafonttop.com/wp-data/p/697/10697/file/pt-root-ui.regular.ttf") format("opentype"),
+        url("https://dafonttop.com/wp-data/p/697/10697/file/pt-root-ui.regular.ttf") format("truetype");
+}*/
+
+/* =============================================
+	HTML5 structural elements
+   =============================================
+*/
+
+
+article, aside, details, dl, figcaption, figure, footer, header, main, nav, section {
+	display: block;
+}
+
+header {
+    overflow: hidden;
+    color: #64a3a3;
+    padding: 20px 20px;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+body {
+    height: auto;
+    background-image: linear-gradient(to bottom, #205e5e, #1d6565, #186c6c, #107474, #037b7b);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+footer {
+    overflow: hidden;
+    color: #f1f1f1;
+    padding: 10px 10px;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    font: 10px PT Root UI, sans-serif;
+    height: 10%;
+}
+
+article {
+    margin: 20px auto;
+}
+
+table {
+    margin: 20px auto;
+}
+
+div.imgbox {
+    margin: auto;
+    display: block;
+    width:100%; 
+    max-width:300px;
+}
+/* =============================================
+	Default colors, margins and sizing
+   =============================================
+*/
+header {
+    background-color: darkslategray;
+}
+
+footer {
+    background-color: #037b7b;
+    display: flex;
+}
+
+.wordbox {
+    display: flex;
+}
+
+/*@media screen (max-width: 650px) {
+  html {
+    width: 100%;
+    display: block;
+  }
+}*/
+/* =============================================
+	Hypertext links
+   =============================================
+*/
+
+tr a {
+    color: #d3e5e5;
+    font: 27px PT Root UI, sans-serif;
+    text-decoration: none;
+}
+
+li a {
+    font: bold 18px PT Root UI, sans-serif;
+}
+
+
+li a:hover {
+    background-color: #087676;
+    color: white;
+}
+
+.active {
+    background-color: #4f2f4f;
+    color: white;
+}
+
+
+nav ul li a {
+    display: block;
+    width: 120px;
+    color: #4f2f4f;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+/* =============================================
+	Default font styles
+   =============================================
+*/
+form {
+    font: 20px PT Root UI, sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.form-container {
+    display: inline;
+}
+
+#submit {
+    background-color: #1b4f4f;
+}
+
+#reset {
+    background-color: #39a7a7;
+}
+
+h1 {
+    font-family: Gill Sans Nova, Arial, sans-serif;
+}
+
+h2 {
+    display: block;
+    float: left;
+    width: 50%;
+    font-weight: 100;
+}
+
+p.contfont {
+    font: 39px PT Root UI, sans-serif;
+    text-align: left;
+    color: #ecf3f3;
+    font-size : 6vw;
+}
+
+p.aboutfont {
+    font: 10px PT Root UI, sans-serif;
+    text-align: left;
+    float: left;
+    color: #ecf3f3;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    font-size : 4vw;
+    height: auto;
+}
+
+.prohead {
+    text-align: center;
+    font: bold 24px Bahnschrift, sans-serif;
+    color: #284343;
+}
+
+.protext {
+    color: #ecf3f3;
+    font-size: 14px;
+    position: absolute;
+    max-height: inherit;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font: italic 14px PT Root UI, sans-serif;
+}
+
+table.grid thead > tr {
+    font: 24px PT Root UI, sans-serif;
+
+}
+
+table.grid tfoot > tr {
+    font: 24px PT Root UI, sans-serif;
+}
+
+/* =============================================
+	Default list styles
+   =============================================
+*/
+
+ul.navbar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 120px;
+    background-color: #aecfcf;
+    text-align: center;
+}
+
+#menubar {
+    width: 120px;
+    text-align: center;
+}
+
+#sidenav {   
+    position: fixed;
+    left: -120px;
+    top: 0px;
+    transition: 0.3s;
+    text-decoration: none;
+    z-index: 99;
+}
+
+#sidenav:hover {
+    left: 0;
+}
+/* =============================================
+	Default styles for images and media
+   =============================================
+*/
+
+#menu {
+    display: block;
+    float: right;
+    margin: -33px 100px;
+    background-color: #4f2f4f;
+    padding: 6px;
+    position: fixed;
+}
+
+img.logo {
+    height: 60px;
+    padding: 10px 20px;
+    margin: auto;
+}
+
+img.img-top {
+    height: 60px;
+    padding: 10px 20px;
+    margin: auto;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    display: inline-block;
+    margin-left: 10;
+    margin-right: 10px;
+}
+
+.icon .img-top {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.icon:hover .img-top {
+    display: inline;
+}
+
+.icon:hover .logo {
+    display: none;
+}
+
+#aboutpic {
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 5px;
+}
+
+.prow {
+    display: flex;
+}
+
+.galrow {
+    display: flex;
+    position: relative;
+    width: 50%;
+    float: left;
+}
+
+.galimg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.galrow:hover .procolumn {
+    opacity: 1;
+}
+
+.procolumn {
+    flex: 33.33%;
+    padding: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #037b7b;
+}
+
+.column {
+    flex: 33.33%;
+    padding: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* =============================================
+	Default styles for web forms
+   =============================================
+*/
+
+form {
+    display: block;
+    height: auto;
+    float: left;
+    width: 50%;
+    padding: 20px;
+}
+
+input#email {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+}
+
+#submit {
+    margin: auto;
+    display: block;
+    float: left;
+    width: 50%;
+}
+
+#reset {
+    margin: auto;
+    display: block;
+    float: left;
+    width: 50%;
+}
+
+#cont {
+    display: block;
+    float: left;
+    height: auto;
+    text-align: justify;
+    width: 50%;
+    padding: 20px;
+    height: auto;
+}
+
+form .button {
+    background-color: #205e5e;
+    font: 15px Bahnschrift Light, sans-serif;
+    border: none;
+    color: #e8f7f7;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 6px;
+    border-radius: 40px;
+    box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+    transform: translateY(4px);
+}
+
+/* =============================================
+	Default styles for web tables
+   =============================================
+*/
+
+header h1 {
+    font-size: 40px;
+    font-weight: 200em;
+    text-align: center;
+}
+
+th {
+    height: 160px;
+    width: 160px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+th.grow {
+    transition: all 0.3s ease;
+    background-color: #037b7b;
+}
+
+th.grow:hover {
+    -webkit-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    transform: scale(1.4);
+}
+
+#abo_hov:hover {
+    background-color: #7b0303;
+    transition: .5s ease;
+}
+
+#exp_hov:hover {
+    background-image: url("assets/img/index.png");
+    background-size: contain;
+    transition: .5s ease;    
+}
+
+#con_hov:hover {
+    background-color: #7b3f03;
+    transition: .5s ease;
+}
+
+#pro_hov:hover {
+    background-color: #7b7b03;
+    transition: .5s ease;
+}
+
+#res_hov:hover {
+    background-color: #037b3f;
+    transition: .5s ease;
+}
+
+#gal_hov:hover {
+    background-color: #7b037b;
+    transition: .5s ease;
+}
+
+/* =============================================
+	Default styles for modals and light boxes
+   =============================================
+ */
+#resume {
+    cursor: zoom-in;
+    transition: 0.3s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#resume:hover {
+    opacity: 0.66;
+}
+.modal {
+    display: none;
+    position: fixed;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9);
+    z-index: 1;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #f1f1f1;
+    padding: 10px 0;
+    height: 150px;
+}
+
+.modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover, .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: zoom-out;
+}
+
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+  }
+}
